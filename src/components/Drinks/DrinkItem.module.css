@@ -23,6 +23,7 @@
   
   .description {
     font-style: italic;
+    text-align: center;
   }
   
   .price {
@@ -36,6 +37,9 @@
     width: 100%;
     max-width: 75%;
     height: auto;
-    
-    
+  }
+  
+  .drinkImg:hover{
+    opacity: .7;
+    transition: .5 ease;
   }

@@ -1,17 +1,19 @@
 import classes from './Header.module.css';
-import drinksImage from '../../assets/carousel3.jpg';
+import drinksImage from '../../assets/carousel2.png';
 import HeaderCartButton from './HeaderCartButton';
+import DrinksSummary from '../Drinks/DrinksSummary';
 
 const Header = props => {
     return(
         <>
-        <header className={classes.header}>
+        <nav className={classes.header}>
             <h1>DrinksMarket</h1>
             <HeaderCartButton onClick={props.onOpenCart}/>
-        </header>
-        <div className={classes['main-image']}>
+        </nav>
+        <header className={classes['main-image']}>
             <img src={drinksImage} alt='Drinks for the header section' />
-        </div>
+            <DrinksSummary/>
+        </header>
 
         </>
     );

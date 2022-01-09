@@ -23,16 +23,17 @@ const DrinkItem = props => {
         <article className={classes.drink}>
             <div className={classes.drinkInfo}>
                 <h3>{props.name}</h3>
+            
                 <img src={props.image} alt="" className={classes.drinkImg} />
+               
                 <p className={classes.description}>{props.description}</p>
       
-            </div>
-         
+             
+     
          
             <p className={classes.price}>{price}</p>
                 <DrinkItemForm id={props.id} onAddToCart={addToCartHandler} />
-
-        
+                </div>
         </article>
         </Card>
     );

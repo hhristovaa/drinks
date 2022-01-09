@@ -11,7 +11,6 @@ const Cart = props => {
 
     const addToCartHandler = item => {
         cartCtx.addItem({...item, sum: 1});
-        // cartCtx.addItem(item);
     };
 
     const removeFromCartHandler = id => {

@@ -3,9 +3,12 @@
     max-width: 45rem;
     width: 90%;
     margin: auto;
-    margin-top: -10rem;
-    position: relative;
-    background-color: #383838;
+    /* margin-top: -10rem; */
+    position: absolute;
+    background-color: #38383882;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     border-radius: 14px;
     padding: 1rem;
