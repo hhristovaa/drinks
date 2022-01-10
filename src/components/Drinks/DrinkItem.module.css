@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 1rem;
     padding-bottom: 1rem;
   }
 
@@ -22,14 +21,14 @@
   }
   
   .description {
-    font-style: italic;
     text-align: center;
+    height: 3em;
   }
   
   .price {
     margin-top: 0.25rem;
     font-weight: bold;
-    color: #ad5502;
+    color: #8F2D56;
     font-size: 1.25rem;
   }
 
@@ -40,6 +39,7 @@
   }
   
   .drinkImg:hover{
-    opacity: .7;
+    /* opacity: .7; */
+    filter: contrast(110%);
     transition: .5 ease;
   }

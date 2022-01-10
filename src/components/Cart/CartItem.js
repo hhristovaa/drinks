@@ -5,16 +5,23 @@ const CartItem = (props) => {
     return(
         <div className={classes['cart-item']}>
             <div>
-                <h2>{props.name}</h2>
+            <h2>{props.name}</h2>
+            <div className={classes['cart-wrapper']}>
                 <div className={classes.summary}>
-                    <span className={classes.price}>{price}</span>
-                    <span className={classes.amount}>x{props.sum}</span>
+                <span className={classes.amount}> Quantity:  {props.sum}</span>
+                <div>
+                <button onClick={props.onRemove}>&ndash;
+</button>
+                <button onClick={props.onAdd}>&#x0002B;
+</button>
+            </div>
+                  
+                
+                </div>
+                <span className={classes.price}>{price}</span>
                 </div>
             </div>
-            <div className={classes.actions}>
-                <button onClick={props.onRemove}>-</button>
-                <button onClick={props.onAdd}>+</button>
-            </div>
+         
         </div>
     );
 }

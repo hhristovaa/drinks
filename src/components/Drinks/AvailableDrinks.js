@@ -1,7 +1,5 @@
 import classes from './AvailableDrinks.module.css';
-import Card from '../UI/Card';
 import DrinkItem from './DrinkItem';
-import teaImg from '../../assets/fruit-tea.jpg';
 import DRINKS_MOCK_DATA from './DRINKS_MOCK_DATA';
 
 // const DUMMY_MEALS = [

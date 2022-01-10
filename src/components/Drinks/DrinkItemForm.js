@@ -25,7 +25,7 @@ const DrinkItemForm = props => {
         <form className={classes.form} onSubmit={submitHandler}>
             <Input
                 ref={quantityInputRef}
-                label="Amount"
+                label="Quantity"
                 input={{
                     id: 'amount_' + props.id,
                     type: 'number',
@@ -34,7 +34,7 @@ const DrinkItemForm = props => {
                     step: '1',
                     defaultValue: '1'
                 }} />
-            <button>+ Add</button>
+            <button>Add to Order</button>
             {!quantityIsValid && <p>Please enter a valid number. Limit 10 per customer. </p>}
 
         </form>

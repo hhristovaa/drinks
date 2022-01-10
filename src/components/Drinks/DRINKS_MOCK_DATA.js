@@ -11,7 +11,7 @@ const DRINKS_MOCK_DATA = [
         id: 2,
         name: "Black Tea",
         price: 3,
-        description: "Stronger in flavor with less caffeine than coffee.",
+        description: "Stronger in flavor with less caffeine than coffee. Distinctly dark and malty flavor.",
         image: require('../../assets/black-tea.jpg'),    
     },
 
