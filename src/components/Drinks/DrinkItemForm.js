@@ -8,7 +8,6 @@ const DrinkItemForm = props => {
 
     const submitHandler = e => {
         e.preventDefault();
-
         const currQuantity = quantityInputRef.current.value;
         const currQuantityNum = +currQuantity;
         if (currQuantity.trim().length === 0 || currQuantityNum < 1 || currQuantityNum > 10) {
@@ -16,9 +15,6 @@ const DrinkItemForm = props => {
             return;
         }
         props.onAddToCart(currQuantityNum);
-
-
-
     };
 
     return (

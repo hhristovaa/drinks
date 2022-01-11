@@ -1,14 +1,13 @@
 .hero-container {
     text-align: center;
-    max-width: 45rem;
+    max-width: 30rem;
     width: 90%;
     margin: auto;
-    /* margin-top: -10rem; */
     position: absolute;
-    background-color: #38383882;
-    top: 50%;
+    background-color: #383838ba;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 100%);
     color: white;
     border-radius: 14px;
     padding: 1rem;

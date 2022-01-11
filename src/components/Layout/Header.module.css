@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
-
 .header {
     position: fixed;
     top: 0;
@@ -22,9 +21,9 @@
     margin-right: 2em;
   }
 
-  a {
+  .header a {
     text-decoration: none;
-    color: inherit;
+    color: #EDF6F9;
     margin-right: 2em;
   }
 

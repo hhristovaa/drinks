@@ -4,9 +4,10 @@ import Drinks from './components/Drinks/Drinks';
 import Cart from './components/Cart/Cart';
 import CartProvider from './store/CartProvider';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import About from './components/Layout/About';
-import MainContent from './components/Layout/MainContent';
+import About from './components/Pages/About';
+import MainContent from './components/Pages/MainContent';
 import Footer from './components/Layout/Footer';
+import ComingSoon from './components/Pages/ComingSoon';
 
 function App() {
   const [isCartOpen, setOpenCart] = useState(false);
@@ -17,34 +18,24 @@ function App() {
 
   const closeCartHandler = () => {
     setOpenCart(false);
-
   };
 
   return (
     <CartProvider>
       {isCartOpen && <Cart onClose={closeCartHandler} />}
       <Header onOpenCart={openCartHandler} />
-    
       <main>
-
-{/* <MainContent/> */}
-  <Routes>
-        <Route path='/' element={<Navigate  to='/about'/>}/>
-        {/* <Route path='/home' element={<Navigate replace to='/home'/>}/> */}
-        {/* <Route exact path='/home' element={<Header onOpenCart={openCartHandler} />}/> */}
-        <Route exact path='/about/*' element={<About />}/>
-        <Route exact path='/home' element={<><MainContent/><Drinks /></>}/>
-   
-      </Routes>
-     
-
+        <Routes>
+          <Route path='/' element={<Navigate to='/home' />} />
+          <Route exact path='/about/*' element={<About />} />
+          <Route exact path='/home' element={<><MainContent /><Drinks /></>} />
+          <Route exact path='/soon' element={<ComingSoon />} />
+        </Routes>
       </main>
       <footer>
-      <Footer/>
+        <Footer />
       </footer>
-  
     </CartProvider>
-    
   );
 }
 
